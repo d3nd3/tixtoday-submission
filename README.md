@@ -182,6 +182,18 @@ async function buyTicket(user: number,thisBooking: Booking): Promise<boolean> {
     console.error(error);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 Pseudo-code
 userId is supplied with login code
