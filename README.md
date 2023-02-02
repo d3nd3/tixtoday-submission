@@ -1,6 +1,7 @@
 # Interview
 The below implementation in a real-world scenario would be done with React.js/React Native Web + next.js/vite.js/CRA. To keep the pseudo-code shorter and concise I didn't show component JSX.  
 To improve performance I would ensure that component re-renders are never too costly and occur never too frequently.  I would Ensure as much content as possible is cached, Resources/images are compressed and to use different sized images for different screen sizes.
+
 ## User Flow
 * Show/search/find shows
 * User selects one
