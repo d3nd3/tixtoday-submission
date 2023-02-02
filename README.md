@@ -19,8 +19,9 @@ On successful booking the seats table would be marked as taken, from being vacan
 
 ## Events
 ### on Select Show in front-end
-`/api/get_show` *takes:*  
-* **showID**
+`/api/get_show` *takes:*
+
+* showID
 
 returns showObject which contains `lotteryId` property, if greater than 0, show is running a lotto.
 
@@ -29,18 +30,19 @@ Used when showing `Enter Lotto` button or not.
 ### on Enter Lottery Event
 `/api/lottery/enter`, *takes:*
 
-* **object(showID)**
-* **object(lotteryID)**
-* **number(num_tickets)**
-* **list(showtimes)**
+* object(showID)
+* object(lotteryID)
+* number(num_tickets)
+* list(showtimes)
 
 returns success code
 
 Here the back-end will append to `db[userId]["pendingLottos"]` an object with {lotteryId, showID, num_tickets, showtimes}.
 
 ### onPopulate pendingLottos list ui
-* `/api/lottery/get_pending` *takes :*  
-**userID**
+`/api/lottery/get_pending` *takes :*
+
+* userID
 
 returns list of awaiting pendingLotto objects.  
 `{lotteryId,showId,num_tickets,showTimes}`
@@ -52,7 +54,8 @@ It would have had to pop from the db[userId]["pendingLottos"] list, and if the U
 
 ### on Purchase Tickets
 `/api/lottery/get_discounted`, *takes*:  
-*  **userID**
+
+*  userID
 
 returns the **discountedAccess list** for userId. 
 
