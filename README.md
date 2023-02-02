@@ -27,11 +27,12 @@ returns showObject which contains `lotteryId` property, if greater than 0, show 
 Used when showing `Enter Lotto` button or not.  
 
 ### on Enter Lottery Event
-`/api/lottery/enter`, *takes:*  
-* **object(showID)** 
+`/api/lottery/enter`, *takes:*
+
+* **object(showID)**
 * **object(lotteryID)**
-* **number(num_tickets)** 
-* **list(showtimes)** 
+* **number(num_tickets)**
+* **list(showtimes)**
 
 returns success code
 
