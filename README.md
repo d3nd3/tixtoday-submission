@@ -24,7 +24,8 @@ On successful booking the seats table would be marked as taken, from being vacan
 
 returns showObject which contains `lotteryId` property, if greater than 0, show is running a lotto.
 
-Used when showing `Enter Lotto` button or not.
+Used when showing `Enter Lotto` button or not.  
+
 ### on Enter Lottery Event
 `/api/lottery/enter`, *takes:*  
 * **object(showID)** 
